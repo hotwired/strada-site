@@ -6,4 +6,7 @@ description: "Strada is a set of three libraries that coordinate across the web,
 
 # Introduction
 
-Strada...
+If you use <a href="https://turbo.hotwired.dev/handbook/native">Turbo Native</a> to build mobile hybrid apps, you can enjoy the best of the web alongside the best of native apps and fully native screens. But, there's a major limitation: there's no way for the native app to know what's happening within the WebView and adapt to the content that its displaying.
+
+Additionally, it'd be great for some web features to break out of the WebView container and drive native features — whether it's displaying native buttons in the top nav bar, displaying native menu sheets, or calling native platform APIs. <strong>Strada</strong> enables you to do all of this and gives you the flexibility to build components that are specific to your app's needs.
+
