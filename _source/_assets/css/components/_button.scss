@@ -2,7 +2,7 @@
   transition: font-weight 0.1s ease, clip-path 0.2s ease, background-color 0.2s ease;
   display: inline-block;
   padding: 1em 1.5em;
-  color: #FFF;
+  color: $color-white;
   font-family: $sans-stack;
   text-decoration: none;
   text-align: center;
@@ -14,12 +14,12 @@
   clip-path: polygon(5% 10%, 46% 1%, 46% 10%, 100% 0, 95% 90%, 31% 100%, 31% 90%, 0% 100%);
 
   &:visited {
-    color: #FFF;
+    color: $color-white;
   }
 
-  @media (hover: hover) {
+  @media(hover: hover) {
     &:hover {
-      color: $color-text;
+      color: $color-black;
       background-color: $color-accent;
       cursor: pointer;
       text-decoration: none;
