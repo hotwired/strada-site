@@ -9,7 +9,7 @@ Strada can either be referenced in compiled form via the Strada distributable sc
 
 ## Prerequisite: Install Stimulus
 
-Strada leverages [Stimulus](https://stimulus.hotwired.dev) and its core `BridgeComponent` class is an extension of a Stimulus `Controller`. You must have Stimulus installed in your web app before installing Strada. See the [Stimulus installation instructions](https://stimulus.hotwired.dev/handbook/installing).
+Strada leverages [Stimulus](https://stimulus.hotwired.dev) and the core `BridgeComponent` class is an extension of a Stimulus `Controller`. You must have Stimulus installed in your web app before installing Strada. See the [Stimulus installation instructions](https://stimulus.hotwired.dev/handbook/installing).
 
 ## In Compiled Form
 
