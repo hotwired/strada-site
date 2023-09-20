@@ -2,7 +2,7 @@ const Cache = require("@11ty/eleventy-cache-assets");
 
 module.exports = async function() {
 
-  let json = await Cache("https://api.github.com/repos/hotwired/turbo/releases/latest", {
+  let json = await Cache("https://api.github.com/repos/hotwired/strada-web/releases/latest", {
     duration: "1d",
     type: "json"
   });
