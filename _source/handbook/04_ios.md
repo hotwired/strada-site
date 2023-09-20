@@ -1,6 +1,6 @@
 ---
 permalink: /handbook/ios.html
-description: "Strada iOS is a native library that makes it easy to create native components in your hybrid app."
+description: "Strada iOS is a native library to create native components in your hybrid app."
 ---
 
 # Strada iOS
