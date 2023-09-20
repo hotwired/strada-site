@@ -42,8 +42,7 @@ Create a `BridgeComponent` with the `"form"` name that sends a message to the na
 ```javascript
 // bridge/form_controller.js
 
-import { BridgeComponent } from "@hotwired/strada"
-import { BridgeElement } from "@hotwired/strada"
+import { BridgeComponent, BridgeElement } from "@hotwired/strada"
 
 export default class extends BridgeComponent {
   static component = "form"
