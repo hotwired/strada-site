@@ -13,7 +13,7 @@ Strada leverages [Stimulus](https://stimulus.hotwired.dev) and the core `BridgeC
 
 ## In Compiled Form
 
-You can float on the latest release of Strada using a CDN bundler like Skypack. See <a href="https://www.skypack.dev/view/@hotwired/strada">https://www.skypack.dev/view/@hotwired/strada</a> for more details. Or <a href="https://unpkg.com/browse/@hotwired/strada@latest/dist/">download the compiled packages from unpkg</a>.
+You can float on the latest release of Strada using a CDN bundler or import <a href="https://unpkg.com/@hotwired/strada/dist/strada.js">strada.js</a> in a `<script type="module">` tag.
 
 ## As An npm Package
 
