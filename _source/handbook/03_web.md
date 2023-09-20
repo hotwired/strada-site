@@ -10,7 +10,7 @@ Strada is a javascript library that makes it easy to create web components in yo
 <div class="landing-actions">
   <a class="landing-actions__item" href="https://github.com/hotwired/strada-web">
     <div class="landing-actions__icon landing-actions__icon--github" aria-hidden="true"></div>
-    Source
+    hotwired/strada-web
   </a>
 </div>
 
