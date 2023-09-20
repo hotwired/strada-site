@@ -55,13 +55,15 @@
 
   @include media(medium) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: stretch;
   }
 }
 
 .landing-actions__item {
   display: block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   margin-bottom: 1em;
   padding: 1.5em 1em;
   font-family: $sans-stack;
