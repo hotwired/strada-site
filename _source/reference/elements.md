@@ -9,7 +9,7 @@ description: "A reference of everything you can do with bridge elements."
 
 The `BridgeElement` class lets you easily use bridge-specific data and behaviors on elements in your components. You can wrap any element in a `new BridgeElement(myElement)` within your bridge components to access the following:
 
-* `title`: Returns the title of the element, attempting to use a `data-bridge-title` value first, otherwise falling back to the element's `textContent` or `value`.
+* `title`: Returns the title of the element, attempting to use a `data-bridge-title` value first, the `aria-label` value second, then otherwise falling back to the element's `textContent` or `value`.
 * `disabled`: Returns whether the element is disabled with the `data-bridge-disabled` attribute.
 * `enabled`: Returns the opposite of `disabled`.
 * `enableForComponent(component)`: Removes the `data-bridge-disabled` attribute on the element.
