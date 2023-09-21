@@ -147,7 +147,7 @@
     <h1>Bridge Elements</h1>
 <p>The <code>BridgeElement</code> class lets you easily use bridge-specific data and behaviors on elements in your components. You can wrap any element in a <code>new BridgeElement(myElement)</code> within your bridge components to access the following:</p>
 <ul>
-<li><code>title</code>: Returns the title of the element, attempting to use a <code>data-bridge-title</code> value first, otherwise falling back to the element’s <code>textContent</code> or <code>value</code>.</li>
+<li><code>title</code>: Returns the title of the element, attempting to use a <code>data-bridge-title</code> value first, the <code>aria-label</code> value second, then otherwise falling back to the element’s <code>textContent</code> or <code>value</code>.</li>
 <li><code>disabled</code>: Returns whether the element is disabled with the <code>data-bridge-disabled</code> attribute.</li>
 <li><code>enabled</code>: Returns the opposite of <code>disabled</code>.</li>
 <li><code>enableForComponent(component)</code>: Removes the <code>data-bridge-disabled</code> attribute on the element.</li>
