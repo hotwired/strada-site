@@ -18,4 +18,4 @@ The following data attributes can be applied to any element accessed via the `Br
 The following data attributes can be applied to elements associated with a `data-controller` and a `BridgeComponent` class:
 
 * `data-controller-optout-ios`: Opt-out the component for your iOS app using [strada-ios](https://github.com/hotwired/strada-ios). Allows you to conditionally disable a component instance for iOS, even if the native app supports the component.
-* `data-controller-optout-android`: Opt-out the component for your iOS app using [strada-android](https://github.com/hotwired/strada-android). Allows you conditionally disable a component instance for Android, even if the native app supports the component.
+* `data-controller-optout-android`: Opt-out the component for your Android app using [strada-android](https://github.com/hotwired/strada-android). Allows you to conditionally disable a component instance for Android, even if the native app supports the component.
