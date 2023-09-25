@@ -5,7 +5,7 @@ description: "Learn how to install Strada in your application."
 
 # Installing Strada in Your Application
 
-Strada can either be referenced in compiled form via the Strada distributable script directly in the `<head>` of your application or through npm via a bundler like esbuild.
+Strada can either be referenced in compiled form via the Strada distributable script directly in the `<head>` of your application, or through npm via a bundler like esbuild.
 
 ## Prerequisite: Install Stimulus
 
@@ -13,7 +13,7 @@ Strada leverages [Stimulus](https://stimulus.hotwired.dev) and the core `BridgeC
 
 ## In Compiled Form
 
-You can float on the latest release of Strada using a CDN bundler or import <a href="https://unpkg.com/@hotwired/strada/dist/strada.js">strada.js</a> in a `<script type="module">` tag.
+You can float on the latest release of Strada using a CDN bundler or import <a href="https://unpkg.com/@hotwired/strada/dist/strada.js">strada.js</a> using a `<script type="module">` tag.
 
 ## As An npm Package
 

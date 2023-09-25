@@ -5,7 +5,7 @@ description: "Strada Web..."
 
 # Strada Web
 
-Strada is a javascript library that makes it easy to create web components in your application using your existing HTML. See [how it works](/handbook/how-it-works) and the [installation instructions](/handbook/installing).
+Strada is a JavaScript library that makes it easy to create web components in your application using your existing HTML. See [how it works](/handbook/how-it-works) and the [installation instructions](/handbook/installing).
 
 <div class="landing-actions">
   <a class="landing-actions__item" href="https://github.com/hotwired/strada-web">
