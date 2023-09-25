@@ -9,7 +9,7 @@ Strada uses a component-based approach to create a bidirectional communication c
 
 Web components "send" messages to their corresponding native components. Native components "receive" the messages to build and display native controls, populating them with `data` supplied in the messages. When native components want to inform their corresponding web components of a user action or state change, the native components "reply" to the originally received messages. Web components "receive" the replies and invoke a callback to update the web component based on the reply message `data`.
 
-Strada leverages [Stimulus](https://stimulus.hotwired.dev) to bring you the same power to your web components. In fact, the core `BridgeComponent` class is an extension of a Stimulus `Controller`, so you should be familiar with Stimulus before building Strada components.
+Strada leverages [Stimulus](https://stimulus.hotwired.dev) to bring the same power to your web components. In fact, the core `BridgeComponent` class is an extension of a Stimulus `Controller`, so you should be familiar with Stimulus before building Strada components.
 
 ## Demo Examples
 
@@ -56,7 +56,7 @@ Let's update the form with bridge attributes and create a new web component, lev
 </form>
 ```
 
-Now, we'll create a new `"form"` component in a similar way you create Stimulus controllers, but extending the `BridgeComponent` class:
+Now, we'll create a new `"form"` component. This is similar to the way you create Stimulus controllers, but extending the `BridgeComponent` class:
 ```javascript
 // bridge/form_controller.js
 
@@ -70,7 +70,7 @@ export default class extends BridgeComponent {
 }
 ```
 
-The basic `"form"` component is now created we can send a `message` to a corresponding native `"form"` component in the native app. We'll send the submit button's title as JSON `data` in the message, so the native component can set the native button's title with the `submitTitle`.
+With the basic `"form"` component created, we can now send a `message` to a corresponding native `"form"` component. We'll send the submit button's title as JSON `data` in the message, so the native component can set the native button's title with the `submitTitle`.
 ```javascript
 // bridge/form_controller.js
 
@@ -91,9 +91,9 @@ export default class extends BridgeComponent {
 }
 ```
 
-Notice the 3rd parameter when calling `send()`. It's a callback function that will get called when the native component replies back to the `"connect"` message. The submit button in the `<form>` is clicked, submitting the form to the server, just as if the user had tapped the button directly.
+Notice the third parameter when calling `send()`. It's a callback function that will be called when the native component replies to the `"connect"` message. The submit button in the `<form>` is clicked, submitting the form to the server, just as if the user had tapped the button directly.
 
-The web component is now done and we can build a corresponding `"form"` component in the iOS and Android apps.
+The web component is now ready and we can build a corresponding `"form"` component in the iOS and Android apps.
 
 ## Building a Native iOS Component
 
@@ -148,9 +148,9 @@ private extension FormComponent {
 }
 ```
 
-The component receives the `message` for the `"connect"` `event`, displays the native button with the `submitTitle`, and replies back to the web component when the native button is tapped.
+The component receives the `message` for the `"connect"` `event`, displays the native button with the `submitTitle`, and replies to the web component when the native button is tapped.
 
-_Note: There's additional work to setup [Strada iOS](https://github.com/hotwired/strada-ios) in your app for the first time. See the [Quick Start](https://github.com/hotwired/strada-ios/blob/main/docs/QUICK-START.md) guide to see the full instructions._
+_Note: There's additional work to set up [Strada iOS](https://github.com/hotwired/strada-ios) in your app for the first time. See the [Quick Start](https://github.com/hotwired/strada-ios/blob/main/docs/QUICK-START.md) guide for complete instructions._
 
 ## Building a Native Android Component
 
@@ -208,15 +208,15 @@ class FormComponent(
 }
 ```
 
-The component receives the `message` for the `"connect"` `event`, displays the native button with the `submitTitle`, and replies back to the web component when the native button is tapped.
+The component receives the `message` for the `"connect"` `event`, displays the native button with the `submitTitle`, and replies to the web component when the native button is tapped.
 
-_Note: There's additional work to setup [Strada Android](https://github.com/hotwired/strada-android) in your app for the first time. See the [Quick Start](https://github.com/hotwired/strada-android/blob/main/docs/QUICK-START.md) guide to see the full instructions._
+_Note: There's additional work to set up [Strada Android](https://github.com/hotwired/strada-android) in your app for the first time. See the [Quick Start](https://github.com/hotwired/strada-android/blob/main/docs/QUICK-START.md) guide for complete instructions._
 
 ## Add CSS to Hide Bridged Elements
 
-We've now setup `"form"` components in the web and native apps. Whenever a native app supports the `"form"` component, it'll receive a message from the web component and display its native button.
+We've now set up `"form"` components in the web and native apps. Whenever a native app supports the `"form"` component, it'll receive a message from the web component and display its native button.
 
-However, there's one final piece to finish. We want to hide the web submit button in the `<form>` when a native button is being displayed. It's easy to write scoped css that is only applied if:
+There's one final piece to finish. We want to hide the web submit button in the `<form>` when a native button is being displayed. It's easy to write scoped css that is only applied if:
 - A particular version of the native app supports the `"form"` component
 - A particular `<form>` in your app is connected to a `"form"` component
 
