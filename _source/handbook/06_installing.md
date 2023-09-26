@@ -13,11 +13,48 @@ Strada leverages [Stimulus](https://stimulus.hotwired.dev) and the core `BridgeC
 
 ## In Compiled Form
 
-You can float on the latest release of Strada using a CDN bundler or import <a href="https://unpkg.com/@hotwired/strada/dist/strada.js">strada.js</a> using a `<script type="module">` tag.
+If you're using [importmap-rails](https://github.com/rails/importmap-rails) you just need to pin Stimulus and Strada in your config/importmap.rb file:
+
+```sh
+./bin/importmap pin @hotwired/stimulus @hotwired/strada
+```
+
+Alternatively, you can manually define importmap entries for both Strada and Stimulus, pointing to the latest versions of each:
+
+```html
+<head>
+  <script type="importmap">
+    {
+      "imports": {
+        "@hotwired/stimulus": "https://cdn.jsdelivr.net/npm/@hotwired/stimulus@latest/dist/stimulus.min.js",
+        "@hotwired/strada": "https://cdn.jsdelivr.net/npm/@hotwired/strada@latest/dist/strada.min.js"
+      }
+    }
+  </script>
+</head>
+```
+
+Then you can import Strada anywhere in your application code:
+
+```html
+  <script type="module">
+    import { Application } from "@hotwired/stimulus"
+    import { BridgeComponent } from "@hotwired/strada"
+
+    const application = Application.start()
+    window.Stimulus = application
+
+    class BridgeTest extends BridgeComponent {
+      // ...
+    }
+
+    application.register("bridge-test", BridgeTest)
+  </script>
+```
 
 ## As An npm Package
 
-You can install Strada from npm via the `npm` or `yarn` packaging tools. Then require or import that in your code:
+You can install Strada from npm via the `npm` or `yarn` packaging tools and use a JavaScript bundler, like webpack or esbuild, to import it in your application.
 
 ```javascript
 import "@hotwired/strada"
