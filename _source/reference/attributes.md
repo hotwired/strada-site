@@ -12,7 +12,7 @@ description: "A reference of everything you can do with element attributes."
 The following data attributes can be applied to any element accessed via the `BridgeElement` class:
 
 * `data-bridge-title="My Title"`: Specifies a custom bridge title for your element.
-* `data-bridge-disabled`: Specifies whether the bridge element should be disabled or disabled for a particular platform. Values must be `"true"`, `"false"`, `"ios"`, or `"android"`.
+* `data-bridge-disabled`: Specifies whether the bridge element should be enabled or disabled for a particular platform. Values must be `"true"`, `"false"`, `"ios"`, or `"android"`.
 * `data-bridge-*`: Specifies arbitrary attributes prefixed with `data-bridge-` whose values are accessible from a `BridgeElement`.
 
 The following data attributes can be applied to elements associated with a `data-controller` and a `BridgeComponent` class:
