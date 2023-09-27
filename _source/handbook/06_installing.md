@@ -36,20 +36,12 @@ Alternatively, you can manually define importmap entries for both Strada and Sti
 
 Then you can import Strada anywhere in your application code:
 
-```html
-  <script type="module">
-    import { Application } from "@hotwired/stimulus"
+```js
     import { BridgeComponent } from "@hotwired/strada"
-
-    const application = Application.start()
-    window.Stimulus = application
 
     class BridgeTest extends BridgeComponent {
       // ...
     }
-
-    application.register("bridge-test", BridgeTest)
-  </script>
 ```
 
 ## As An npm Package
