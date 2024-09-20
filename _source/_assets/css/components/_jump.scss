@@ -2,8 +2,8 @@
   width: 100%;
   margin: 0;
   padding: 0 1em;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-background);
+  background-color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@
   display: inline-block;
   margin: 0;
   padding: 0.5em 0.125em;
-  color: var(--color-white);
+  color: var(--color-background);
   font-weight: 500;
   text-decoration: none;
 
@@ -52,7 +52,7 @@
   }
 
   &:visited {
-    color: var(--color-white);
+    color: var(--color-background);
   }
 
   &:hover {

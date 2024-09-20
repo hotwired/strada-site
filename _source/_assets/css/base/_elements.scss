@@ -13,7 +13,7 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
-  color: var(--color-black);
+  color: var(--color-text);
   font-family: var(--serif-stack);
   font-size: var(--font-base-small);
   font-style: normal;
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: var(--color-black);
+  color: var(--color-text);
   font-weight: 550;
   margin: -.2rem;
   padding: .2rem;
@@ -39,7 +39,7 @@ a {
   text-decoration-width: 0.1rem;
 
   &:visited {
-    color: var(--color-black);
+    color: var(--color-text);
   }
 
   @media(hover: hover) {
@@ -52,7 +52,7 @@ a {
   }
 
   &:active {
-    color: var(--color-black);
+    color: var(--color-text);
   }
 }
 
@@ -116,7 +116,7 @@ blockquote {
   position: relative;
   margin-bottom: 1.5em;
   padding: 0 0 0 2em;
-  border-left: 2px solid var(--color-black);
+  border-left: 2px solid var(--color-text);
   text-align: left;
 
   &:before {
