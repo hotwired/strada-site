@@ -71,7 +71,7 @@
   text-align: center;
   line-height: 1.25;
   background-color: var(--color-white);
-  box-shadow: 0 0 2em rgba(var(--color-black), 0.075);
+  box-shadow: 0 0 2em rgba(var(--color-black-rgb), 0.075);
   border-radius: 0.5em;
 
   @include media(small) {
