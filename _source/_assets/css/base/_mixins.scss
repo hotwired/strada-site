@@ -37,14 +37,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent: #FFD700; // Darker yellow for better contrast in dark mode
-    --color-tint: #2A2A2A; // Dark gray instead of light tint
-    --color-brand: #FF6B61; // Slightly lighter red for better visibility
+    --color-accent: #cbab00;
+    --color-tint: #5f5e5b;
+    --color-brand: #FF6B61;
 
-    --color-text: var(--color-white);
-    --color-text-rgb: var(--color-white-rgb);
-    --color-background: var(--color-black);
-    --color-background-rgb: var(--color-black-rgb);
+    --color-off-white: #E0E0E0;
+    --color-off-white-rgb: 224, 224, 224;
+    --color-text: var(--color-off-white);
+    --color-text-rgb: var(--color-off-white-rgb);
+    --color-off-black: #2A2A2A;
+    --color-off-black-rgb: 42, 42, 42;
+    --color-background: var(--color-off-black);
+    --color-background-rgb: var(--color-off-black-rgb);
   }
 }
 
