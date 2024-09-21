@@ -2,7 +2,7 @@
   float: left;
   margin: 0 0 0 -1em;
   padding: 0;
-  font-size: $font-x-small;
+  font-size: var(--font-x-small);
   text-decoration: none;
   opacity: 0.5;
 }

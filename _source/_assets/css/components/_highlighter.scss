@@ -2,7 +2,7 @@
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(var(--color-text-rgb), 0.6);
 	font-style: italic;
 }
 
@@ -13,13 +13,26 @@
 .token.string,
 .token.attr-value,
 .token.attr-name {
-  color: #4070a0;
-  font-weight: normal;
+	color: #4070a0;
+	font-weight: normal;
+}
+@media (prefers-color-scheme: dark) {
+	.token.string,
+	.token.attr-value,
+	.token.attr-name {
+		color: #7FFFD4;
+	}
 }
 
 .token.punctuation,
 .token.operator {
-	color: #393A34;
+	color: var(--color-text);
+}
+@media (prefers-color-scheme: dark) {
+	.token.punctuation,
+	.token.operator {
+		color: var(--color-text);
+	}
 }
 
 .token.entity,
@@ -31,20 +44,45 @@
 .token.property,
 .token.regex,
 .token.inserted {
-  color: #002070;
-  font-weight: bold;
+	color: #002070;
+	font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+	.token.entity,
+	.token.url,
+	.token.symbol,
+	.token.number,
+	.token.variable,
+	.token.constant,
+	.token.property,
+	.token.regex,
+	.token.inserted {
+		color: #e89cc2;
+	}
 }
 
 .token.boolean {
-  color: #007020;
-  font-weight: bold;
+	color: #007020;
+	font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+	.token.boolean {
+		color: #00FF00;
+	}
 }
 
 .token.atrule,
 .token.keyword,
 .language-autohotkey .token.selector {
-  color: #007020;
-  font-weight: bold;
+	color: #007020;
+	font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+	.token.atrule,
+	.token.keyword,
+	.language-autohotkey .token.selector {
+		color: #FF6347;
+	}
 }
 
 .token.function,
@@ -52,12 +90,26 @@
 .language-autohotkey .token.tag {
 	color: #9a050f;
 }
+@media (prefers-color-scheme: dark) {
+	.token.function,
+	.token.deleted,
+	.language-autohotkey .token.tag {
+		color: #FF4500;
+	}
+}
 
 .token.tag,
 .token.selector,
 .language-autohotkey .token.keyword {
-  color: #062873;
-  font-weight: bold;
+	color: #062873;
+	font-weight: bold;
+}
+@media (prefers-color-scheme: dark) {
+	.token.tag,
+	.token.selector,
+	.language-autohotkey .token.keyword {
+		color: #98bde1;
+	}
 }
 
 .token.important,
